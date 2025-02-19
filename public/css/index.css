@@ -1,0 +1,175 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: background-color 200ms linear, color 200ms linear;
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('/font/CascadiaCode/CascadiaCode.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Code';
+    font-style: italic;
+    src: url('/font/CascadiaCode/CascadiaCodeItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Code NF';
+    src: url('/font/CascadiaCode/CascadiaCodeNF.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Code NF';
+    font-style: italic;
+    src: url('/font/CascadiaCode/CascadiaCodeNFItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('/font/CascadiaCode/CascadiaCodePL.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    font-style: italic;
+    src: url('/font/CascadiaCode/CascadiaCodePLItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Mono';
+    src: url('/font/CascadiaCode/CascadiaMono.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Mono';
+    font-style: italic;
+    src: url('/font/CascadiaCode/CascadiaMonoItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Mono NF';
+    src: url('/font/CascadiaCode/CascadiaMonoNF.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Mono NF';
+    font-style: italic;
+    src: url('/font/CascadiaCode/CascadiaMonoNFItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Mono PL';
+    src: url('/font/CascadiaCode/CascadiaMonoPL.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cascadia Mono PL';
+    font-style: italic;
+    src: url('/font/CascadiaCode/CascadiaMonoPLItalic.ttf') format('truetype');
+}
+
+
+html, body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#website-header {
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--color-neutral-300);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-anchor {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+#logo-container {
+    background-color: black;
+    padding: 0.75rem 0.25rem 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+}
+
+#header-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+#header-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: var(--color-blue-600);
+    transition: all 150ms linear;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.nav-link:hover {
+    background-color: var(--color-blue-600);
+    color: white;
+}
+
+.nav-link:active {
+    background-color: var(--color-blue-700);
+    color: white;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+    .container {
+        width: 640px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .container {
+        width: 1536px;
+    }
+}

@@ -1,0 +1,133 @@
+
+ :root {
+    --color-background: #0E131B;
+    --color-current-line: #131C2A;
+    --color-selection: #2A3B5A;
+
+    --color-salmon: #B38098;
+    --color-green: #98C379;
+    --color-yellow: #E8C37D;
+    --color-pink: #F386BF;
+    --color-white: #C8D1DF;
+    --color-orange: #CA9064;
+    --color-aqua: #53C6BA;
+    --color-gray: #6C8093;
+    --color-purple: #BA7BCC;
+    --color-blue: #7897DC;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: white;
+	background: none;
+	font-family: 'Cascadia Code', Consolas, monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	background: var(--color-selection);
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	background: var(--color-selection);
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: var(--color-background);
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: 0.1em;
+	border-radius: 0.3em;
+	white-space: normal;
+}
+
+.token.comment {
+    color: var(--color-salmon);
+    font-style: italic;
+}
+
+
+.token.imports {
+    color: var(--color-blue);
+}
+
+.token.selector ,
+.token.function,
+.token.tag {
+    color: var(--color-aqua);
+}
+
+.token.property,
+.token.number,
+.token.attr-name {
+    color: var(--color-orange);
+}
+
+.token.punctuation {
+    color: var(--color-gray);
+}
+
+.token.char,
+.token.attr-value,
+.token.string {
+    color: var(--color-green);
+}
+
+.token.important,
+.token.entity,
+.token.class-name,
+.token.constant,
+.token.variable,
+.token.identifier,
+.token.boolean {
+    color: var(--color-yellow);
+}
+
+.token.operator,
+.token.atrule,
+.token.keyword {
+    color: var(--color-purple);
+}
+
+
+.token.builtin {
+    color: var(--color-pink);
+}
+
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.url {
+    text-decoration: underline;
+}
