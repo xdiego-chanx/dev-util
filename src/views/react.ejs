@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include(layouts + "/head" ); %>
+        <title>Home | DevUtil</title>
+</head>
+
+<body>
+    <%- include(layouts + "/header" ); %>
+        <main class="container mx-auto">
+            <h1 class="type-h1">HTML to JSX Converter</h1>
+            <div id="html-jsx-conv-container">
+                <textarea name="input" id="input" class="textbox" placeholder="HTML markup goes here..."
+                    rows="5"></textarea>
+                <textarea name="output" id="output" class="textbox" placeholder="JSX markup will show up here..."
+                    rows="5" readonly></textarea>
+            </div>
+        </main>
+        <script src="js/react.js"></script>
+</body>
+</html>

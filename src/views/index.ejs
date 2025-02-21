@@ -8,46 +8,6 @@
 </head>
 <body>
     <%- include(layouts + "/header"); %>
-    <pre>
-        <code class="language-javascript">
-            import express from "express";
-            import dotenv from "dotenv";
-            import path from "path";
-            import { fileURLToPath } from "url";
-            
-            const __filename = fileURLToPath(import.meta.url);
-            const __dirname = path.dirname(__filename);
-            
-            dotenv.config();
-            
-            const app = express();
-            
-            const PORT = process.env.PORT || 8080;
-            const views = path.join(__dirname, "views");
-            
-            app.set("view engine", "ejs");
-            app.use(express.static(path.join(__dirname, "..", "public")));
-            
-            app.get("/", (req, res) => {
-                res.render(path.join(views, "index.ejs"), {
-                    layouts: path.join(__dirname, "layouts")
-                });
-            });
-            
-            app.listen(PORT, () => {
-                console.log("Server running at http://127.0.0.1:%i", PORT);
-            });
-            
-        </code>
-    </pre>
-    <pre>
-        <code class="language-html">
-            <%- '&lt;div class="great" id="day"&gt;great day&lt;/div&gt;' %>
-            <%- '&lt;link rel="shortcut icon" href="https://www.google.com/" type="image/svg+xml"&gt;' %>
-            <%- "&lt;style&gt;body {font-family: 'Cascadia Code', monospace !important; } &lt;/style&gt;" %>
-        </code>
-    </pre>    
-    <script src="js/prism.js"></script>
 </body>
 </html>
 
